@@ -4,8 +4,6 @@ from matplotlib import ticker
 import numpy as np
 from scipy.interpolate import griddata
 
-
-
 def format_axis_ticks(ax):
     """Format axis ticks for consistent appearance."""
     ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%.2f'))
