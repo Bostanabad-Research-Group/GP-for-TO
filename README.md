@@ -1,4 +1,4 @@
-# Physics-informed Gaussian Processes for Topology Optimization
+# Topology Optimization with Physics-informed Gaussian Processes
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
