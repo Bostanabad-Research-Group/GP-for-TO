@@ -1,4 +1,4 @@
-# Simultaneous and Meshfree Topology Optimization with Physics-informed Gaussian Processes
+# Physics-informed Gaussian Processes for Topology Optimization
 
 
 
