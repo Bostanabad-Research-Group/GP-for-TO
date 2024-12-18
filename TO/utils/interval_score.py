@@ -1,7 +1,6 @@
 import numpy as np
 import torch 
 
-
 def interval_score(Yu, Yl, Y, alpha = 0.05):
     out = Yu - Yl
     out += (Y > Yu).to(torch.int64) * 2/alpha * (Y- Yu)
