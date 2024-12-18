@@ -167,7 +167,7 @@ def plot_density_and_velocity_fields(u, v, p, ro, collocation_x, iteration):
     velocity_squared = grid_U**2 + grid_V**2
 
     # Mask velocities where velocity squared >= 0.01
-    mask = velocity_squared < 0.01
+    mask = velocity_squared > 0.01
     grid_U_masked = np.where(mask, grid_U, 0)  # Set to 0 or another placeholder for masked values
     grid_V_masked = np.where(mask, grid_V, 0)
 
