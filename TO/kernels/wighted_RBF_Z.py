@@ -32,25 +32,6 @@ class wighted_RBF_Z(RBFKernel):
 
             ten_power_omega_sqrt = self.lengthscale.sqrt()
             
-            # weight_value=self.lengthscale
-            # x1=x1[16,:]* torch.ones_like(x1)
-            # x1_ = x1[:,1:].mul(ten_power_omega_sqrt)
-            # #### Amin Added this
-            # x2_ = x2[:,1:].mul(ten_power_omega_sqrt)
-
-
-            # return 0*torch.eye(COV_old.size()[0])
-            # return self.covar_dist(
-            #     x1_, x2_, square_dist=True, diag=diag, dist_postprocess_func=postprocess_rbf, postprocess=True, **params
-            # )
-        # return RBFCovariance.apply(
-        #     x1,
-        #     x2,
-        #     self.lengthscale,
-        #     lambda x1, x2: self.covar_dist(
-        #         x1, x2, square_dist=True, diag=False, dist_postprocess_func=postprocess_rbf, postprocess=False, **params
-        #     ),
-        # )
             x1_ = x1[:,1:].div(self.lengthscale)
             x2_ = x2[:,1:].div(self.lengthscale)
             x_INDEC=x1[:,0]
@@ -97,43 +78,6 @@ class wighted_RBF_Z(RBFKernel):
             #     weight[W_1,i]=weight[W_1,i]/weight_value
             weight[W_1,:]=weight[W_1,:]/weight_value
             weight[:,W_2]=weight[:,W_2]/weight_value
-
-            # for i in W_2:
-            #     weight[W_1,i]=weight[W_1,i]*weight_value
-
-            # return torch.mul(COV_old,weight_value*weight)
             
             return weight_value*weight
 
-        #     return torch.ones_like(COV_old)
-        
-        # return torch.ones_like(RBFCovariance.apply(
-        #     x1,
-        #     x2,
-        #     self.lengthscale,
-        #     lambda x1, x2: self.covar_dist(
-        #         x1, x2, square_dist=True, diag=False, dist_postprocess_func=postprocess_rbf, postprocess=False, **params
-        #     ),
-        # ))
-    
-
-
-        #     return torch.eye(torch.zeros_like(COV_old).size()[0])
-        
-        # return torch.eye(torch.zeros_like(RBFCovariance.apply(
-        #     x1,
-        #     x2,
-        #     self.lengthscale,
-        #     lambda x1, x2: self.covar_dist(
-        #         x1, x2, square_dist=True, diag=False, dist_postprocess_func=postprocess_rbf, postprocess=False, **params
-        #     ),
-        # )).size()[0])
-        
-        # return RBFCovariance.apply(
-        #     x1,
-        #     x2,
-        #     self.lengthscale,
-        #     lambda x1, x2: self.covar_dist(
-        #         x1, x2, square_dist=True, diag=False, dist_postprocess_func=postprocess_rbf, postprocess=False, **params
-        #     ),
-        # )
