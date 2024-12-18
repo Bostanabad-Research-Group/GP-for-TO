@@ -11,12 +11,10 @@ from .gpregression import GPR
 from .. import kernels
 from ..priors import MollifiedUniformPrior
 from pandas import DataFrame
-from category_encoders import BinaryEncoder
 from TO.preprocessing import setlevels
 import matplotlib.pyplot as plt
 from torch.nn.parameter import Parameter
 import torch.nn.functional as F 
-
 
 class GPPLUS(GPR):
     """The latent Map GP regression model (LMGP) which extends GPs to handle categorical inputs.
