@@ -23,10 +23,21 @@ Please ensure the following packages are installed with the specified versions. 
 ## Usage
 
 
-## Contributions and Assistance
+
+## The Team
+Amin Yousefpour\
+Shirin Hosseinmardi\
+Carlos Mora\
+Ramin Bostanabad
 
 
-## Citation
+## Citing Us
+If you use this code or find our work interesting, please cite the following paper:
+
+Yousefpour, Amin, et al. "Simultaneous and Meshfree Topology Optimization with Physics-informed Gaussian Processes." arXiv preprint arXiv:2408.03490 (2024).
+
+## Assistance and Support
+Need help Feel free to open an issue on our GitHub page and label it according to the module or feature in question for quicker assistance.
 
 
 
