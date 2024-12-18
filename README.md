@@ -24,13 +24,6 @@ Please ensure the following packages are installed with the specified versions. 
 
 
 
-## The Team
-Amin Yousefpour\
-Shirin Hosseinmardi\
-Carlos Mora\
-Ramin Bostanabad
-
-
 ## Citing Us
 If you use this code or find our work interesting, please cite the following paper:
 
