@@ -17,6 +17,7 @@ Please ensure the following packages are installed with the specified versions. 
 - [PyTorch](https://github.com/pytorch/pytorch) == 1.12.0 & CUDA >= 11.3: `conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch`
 - [GPyTorch](https://github.com/cornellius-gp/gpytorch) == 1.7.0: `conda install -c gpytorch gpytorch=1.7.0`
 - Dill == 0.3.5.1: `pip install dill==0.3.5.1`
+- pandas: `pip install pandas`
 - Matplotlib == 3.5.3: `conda install -c conda-forge matplotlib=3.5.3`
 - Tqdm >= 4.66.4: `pip install tqdm`
 
