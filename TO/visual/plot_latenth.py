@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import torch
 
-
 def plot_sep(positions, levels, perm, constraints_flag = True, suptitle= None):
     # 
     # plot latent values
