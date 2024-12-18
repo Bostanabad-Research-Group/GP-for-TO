@@ -498,29 +498,6 @@ class GPPLUS(GPR):
                 dict2[i]=dict[tuple((x[i]).numpy())]
             
             x_one_hot= torch.from_numpy(np.array(list(dict2.values())))
-                    
-        elif self.encoding_type  == 'binary':
-            dict={}
-            dict2={}
-            dict3={}
-            dict4={}
-            dict3[0]=[]
-            dict2[0]=[]
-            for i in range(0,self.perm.shape[0]):
-                dict[tuple((self.perm[i,:]).numpy())]=str(i)
-                dict3[0].append(str(i))
-            
-            data= DataFrame.from_dict(dict3)
-            encoder= BinaryEncoder()
-            data_encoded=(encoder.fit_transform(data)).to_numpy()
-
-            for i in range(0,self.perm.shape[0]):
-                dict4[str(i)]= data_encoded[i]
-
-            for i in range(0,x.shape[0]):
-                dict2[i]=dict4[dict[tuple((x[i]).numpy())]]
-
-            x_one_hot= torch.from_numpy(np.array(list(dict2.values())))
         else:
             raise ValueError ('Invalid type')
 
