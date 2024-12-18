@@ -28,12 +28,7 @@ To set up the environment for this project, follow these steps:
      source GP_for_TO/bin/activate
      ```
 
-2. **Upgrade pip**:  
-   ```bash
-   pip install --upgrade pip
-   ```
-
-3. **Install the required packages**:
+2. **Install the required packages**:
    - [PyTorch](https://github.com/pytorch/pytorch) == 1.12.0 & CUDA >= 11.3:  
      ```bash
      pip install torch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 --index-url https://download.pytorch.org/whl/cu113
