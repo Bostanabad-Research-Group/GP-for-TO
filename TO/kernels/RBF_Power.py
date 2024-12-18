@@ -65,15 +65,6 @@ class PowerExpKernel(Kernel):
             return self.covar_dist(
                 x1_, x2_,p=2.0/2.0, square_dist=True, diag=diag, dist_postprocess_func=postprocess_rbf, postprocess=True, **params
             )
-        # return RBFCovariance.apply(
-        #     x1,
-        #     x2,
-        #     self.lengthscale,
-        #     lambda x1, x2: self.covar_dist(
-        #         x1, x2, p=self.power, square_dist=True, diag=False, dist_postprocess_func=postprocess_rbf, postprocess=False, **params
-        #     ),
-        # )
-
 
 def postprocess_rbf(dist_mat):
     return dist_mat.div_(-1).exp_()
