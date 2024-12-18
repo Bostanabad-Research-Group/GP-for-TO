@@ -21,7 +21,7 @@ Please ensure the following packages are installed with the specified versions. 
 - Tqdm >= 4.66.4: `pip install tqdm`
 
 ## Usage
-
+After installing the above packages, you are all set to use our code. We provide one main file () that demonstrates the application of our technique for TO problems discussed in the paper. 
 
 
 ## Citing Us
