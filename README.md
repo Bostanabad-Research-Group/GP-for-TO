@@ -12,7 +12,7 @@ We place GP priors on all design and state variables to represent them via param
 
 
 ## Requirements
-Please ensure the following packages are installed with the specified versions. If you prefer to use Anaconda, the commands for creating an environment and installing these packages through its prompt are also provided:
+After creating a new virtual environment, please ensure the following packages are installed with the specified versions:
 - Python == 3.9.13: `conda create --name GP_for_TO python=3.9.13` and then activate the environment via `conda activate GP_for_TO`
 - [PyTorch](https://github.com/pytorch/pytorch) == 1.12.0 & CUDA >= 11.3: `conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch`
 - [GPyTorch](https://github.com/cornellius-gp/gpytorch) == 1.7.0: `conda install -c gpytorch gpytorch=1.7.0`
