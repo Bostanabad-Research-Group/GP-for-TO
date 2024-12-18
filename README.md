@@ -30,7 +30,7 @@ If you use this code or find our work interesting, please cite the following pap
 Yousefpour, Amin, et al. "Simultaneous and Meshfree Topology Optimization with Physics-informed Gaussian Processes." arXiv preprint arXiv:2408.03490 (2024).
 
 ## Assistance and Support
-Need help Feel free to open an issue on our GitHub page and label it according to the module or feature in question for quicker assistance.
+Need help with the code? Feel free to open an issue on our GitHub page and label it according to the module or feature in question for quicker assistance.
 
 
 
