@@ -12,14 +12,54 @@ We place GP priors on all design and state variables to represent them via param
 
 
 ## Requirements
-After creating a new virtual environment, please ensure the following packages are installed with the specified versions:
-- Python == 3.9.13: `conda create --name GP_for_TO python=3.9.13` and then activate the environment via `conda activate GP_for_TO`
-- [PyTorch](https://github.com/pytorch/pytorch) == 1.12.0 & CUDA >= 11.3: `conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch`
-- [GPyTorch](https://github.com/cornellius-gp/gpytorch) == 1.7.0: `conda install -c gpytorch gpytorch=1.7.0`
-- Dill == 0.3.5.1: `pip install dill==0.3.5.1`
-- pandas: `pip install pandas`
-- Matplotlib == 3.5.3: `conda install -c conda-forge matplotlib=3.5.3`
-- Tqdm >= 4.66.4: `pip install tqdm`
+To set up the environment for this project, follow these steps:
+
+1. **Create a new virtual environment**:  
+   ```bash
+   python -m venv GP_for_TO
+   ```
+   Activate the environment:  
+   - On Windows:  
+     ```bash
+     GP_for_TO\Scripts\activate
+     ```
+   - On macOS/Linux:  
+     ```bash
+     source GP_for_TO/bin/activate
+     ```
+
+2. **Upgrade pip**:  
+   ```bash
+   pip install --upgrade pip
+   ```
+
+3. **Install the required packages**:
+   - [PyTorch](https://github.com/pytorch/pytorch) == 1.12.0 & CUDA >= 11.3:  
+     ```bash
+     pip install torch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 --index-url https://download.pytorch.org/whl/cu113
+     ```
+   - [GPyTorch](https://github.com/cornellius-gp/gpytorch) == 1.7.0:  
+     ```bash
+     pip install gpytorch==1.7.0
+     ```
+   - **Dill** == 0.3.5.1:  
+     ```bash
+     pip install dill==0.3.5.1
+     ```
+   - **pandas**:  
+     ```bash
+     pip install pandas
+     ```
+   - **Matplotlib** == 3.5.3:  
+     ```bash
+     pip install matplotlib==3.5.3
+     ```
+   - **Tqdm** >= 4.66.4:  
+     ```bash
+     pip install tqdm>=4.66.4
+     ```
+
+Once these steps are completed, your environment will be ready to use.
 
 ## Usage
 Once you have downloaded the code from this GitHub repository and installed the required packages, you’re ready to get started. The primary script, main_TO.py, located in the notebook folder, demonstrates the application of our technique to the topology optimization (TO) problems detailed in the paper.
