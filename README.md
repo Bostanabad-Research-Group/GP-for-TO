@@ -21,7 +21,7 @@ Please ensure the following packages are installed with the specified versions. 
 - Tqdm >= 4.66.4: `pip install tqdm`
 
 ## Usage
-Once you’ve downloaded the code from this GitHub repository and installed the required packages, you’re ready to get started. The primary script, main_TO.py, located in the notebook folder, demonstrates the application of our technique to the topology optimization (TO) problems detailed in the accompanying paper.
+Once you have downloaded the code from this GitHub repository and installed the required packages, you’re ready to get started. The primary script, main_TO.py, located in the notebook folder, demonstrates the application of our technique to the topology optimization (TO) problems detailed in the accompanying paper.
 
 
 ## Citing Us
