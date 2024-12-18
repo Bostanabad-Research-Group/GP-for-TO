@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import torch
 
-
 tkwargs = {
     "dtype": torch.double,
     "device": torch.device("cpu" if torch.cuda.is_available() else "cpu"),
