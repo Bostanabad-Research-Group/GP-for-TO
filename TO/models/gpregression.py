@@ -1,5 +1,3 @@
-
-
 import torch
 import gpytorch
 import math
