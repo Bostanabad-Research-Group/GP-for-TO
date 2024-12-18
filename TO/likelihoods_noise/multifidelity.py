@@ -118,15 +118,3 @@ class Multifidelity_noise(_HomoskedasticNoiseBase):
         
 
         return temp
-
-
-'''
-if __name__ == '__main__':
-    multi_likelihood = Multifidelity_likelihood(num_noises=3)
-    multi_noise = Multifidelity_noise(num_noises=2)
-    print(multi_likelihood)
-    fidel_indices = torch.tensor([1, 3, 2, 3, 2, 1, 3])
-    noise_indices = [1, 3]
-    covar = multi_noise(fidel_indices = fidel_indices, noise_indices = noise_indices)
-    aa = 1
-'''
