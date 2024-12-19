@@ -12,7 +12,7 @@ plt.rcParams['font.size'] = 15
 plt.rcParams['figure.dpi'] = 150
 
 
-checkpoints=[1000,20000,30000,40000,50000]
+checkpoints=[1000,10000,20000,30000,40000,50000]
 lambdaa = 0.1
 
 # Determine volume loss based on title
