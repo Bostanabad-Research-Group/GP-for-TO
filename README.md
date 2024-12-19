@@ -14,7 +14,7 @@ We place GP priors on all design and state variables to represent them via param
 ## Requirements
 To set up the environment for this project, follow these steps:
 
-1. **Create a new virtual environment**:  
+1. **Create a new virtual environment on Python 3.9.13**:  
    ```bash
    python -m venv GP_for_TO
    ```
