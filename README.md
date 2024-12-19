@@ -57,7 +57,7 @@ To set up the environment for this project, follow these steps:
 Once these steps are completed, your environment will be ready to use.
 
 ## Usage
-Once you have downloaded the code from this GitHub repository and installed the required packages, you’re ready to get started. The primary script, main_TO.py, located in the notebook folder, demonstrates the application of our technique to the topology optimization problems detailed in the paper.
+After downloading the code from this GitHub repository and installing the required packages, you’re all set to get started. The primary script, `main_TO.py`, located in the `notebook` folder, provides a comprehensive demonstration of applying the proposed technique to the topology optimization problems discussed in the paper. 
 
 
 ## Citing Us
