@@ -199,17 +199,10 @@ def get_data_fluid(problem = 'rugby', N_col_domain = 10000, N_train = 25.0, rati
         V_train = torch.cat([v_top, v_right, v_bottom, v_left, v_corners], dim=0)
 
         X_train_U = X_train
-        train_U = U_train
-
         X_train_V = X_train
-        train_V = V_train
-
-        train_ro = torch.cat((1 + 0 * train_V.clone(), torch.tensor([0])), dim=0)
-        X_train_U = torch.cat((X_train_U, torch.tensor([[0.5, 0.5]])), dim=0)
-        train_U = torch.cat((train_U, torch.tensor([0])), dim=0)
-
-        X_train_V = torch.cat((X_train_V, torch.tensor([[0.5, 0.5]])), dim=0)
-        train_V = torch.cat((train_V, torch.tensor([0])), dim=0)
+        train_ro = torch.cat((1 + 0 * V_train.clone(), torch.tensor([0])), dim=0)
+        U_train = torch.cat((U_train, torch.tensor([0])), dim=0)
+        V_train = torch.cat((V_train, torch.tensor([0])), dim=0)
         
         
     elif problem == 'doublepipe':
