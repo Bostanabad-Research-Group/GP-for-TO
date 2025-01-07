@@ -197,7 +197,8 @@ def get_data_fluid(problem = 'rugby', N_col_domain = 10000, N_train = 25.0, rati
         X_train = torch.cat([x_top, x_right, x_bottom, x_left, x_corners], dim=0)
         U_train = torch.cat([u_top, u_right, u_bottom, u_left, u_corners], dim=0)
         V_train = torch.cat([v_top, v_right, v_bottom, v_left, v_corners], dim=0)
-
+       
+        X_train=torch.cat((X_train, torch.tensor([0.5, 0.5]).unsqueeze(0)), dim=0)
         X_train_U = X_train
         X_train_V = X_train
         train_ro = torch.cat((1 + 0 * V_train.clone(), torch.tensor([0])), dim=0)
