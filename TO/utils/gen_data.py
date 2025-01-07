@@ -14,8 +14,8 @@ def get_data_fluid(problem = 'rugby', N_col_domain = 10000, N_train = 25.0, rati
     points_y = torch.linspace(domain['y'][0], domain['y'][1], N_train+2)[1:-1]
         
     if problem == 'pipebend':
-        N_train_r = torch.floor(N_train/5)  # 
-        N_train_b = torch.floor(N_train/5)  # 
+        N_train_r = int(torch.floor(torch.tensor(N_train / 5)).item())  # 
+        N_train_b = int(torch.floor(torch.tensor(N_train / 5)).item()) # 
 
         # Points excluding the overlapping region [0.7, 0.9] for the left boundary
         points_y_filtered = points_y[(points_y < 0.7) | (points_y > 0.9)]
