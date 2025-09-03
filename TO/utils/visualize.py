@@ -225,7 +225,8 @@ def plot_density_and_velocity_fields(u, v, p, ro, collocation_x, iteration):
     plt.tight_layout()
 
     # Specify the file path and save the figure
-    file_path = f"results/density_velocity_iteration_{iteration}.tiff"
-    os.makedirs(os.path.dirname(file_path), exist_ok=True)
-    plt.savefig(file_path, format='tiff', dpi=1200)
+    # file_path = f"results/density_velocity_iteration_{iteration}.tiff"
+    # os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    # plt.savefig(file_path, format='tiff', dpi=1200)
     plt.show(block=False)
+
