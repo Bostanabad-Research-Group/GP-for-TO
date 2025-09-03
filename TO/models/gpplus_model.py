@@ -220,7 +220,7 @@ class GPPLUS(GPR):
         self.alpha = 1.0
         self.beta = 20.0
         self.covar_inv = None
-        self.omega = 3#3.2
+        self.omega = 3.0#3.2
         self.name_output = name_output
         self.chol_decomp = None
         self.g_uvp = None
@@ -736,6 +736,7 @@ class Linear_MAP(torch.nn.Linear):
         
     def forward(self, input, transform = lambda x: x):
         return F.linear(input,transform(self.weight), self.bias)
+
 
 
 
