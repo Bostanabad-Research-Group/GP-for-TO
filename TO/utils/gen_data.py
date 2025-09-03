@@ -368,4 +368,5 @@ def get_data_fluid(problem = 'rugby', N_col_domain = 10000, N_train = 25.0, rati
     X_train_P = torch.tensor([[1.0, 0]]) 
     train_P=torch.tensor([0])
     
-    return X_col_domain, [X_train_U,X_train_V,X_train_ro,X_train_P],[U_train,V_train,train_ro,train_P]
+    return X_col_domain, [X_train_U,X_train_V,X_train_P, X_train_ro],[U_train,V_train,train_P, train_ro]
+
