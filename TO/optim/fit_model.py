@@ -128,8 +128,7 @@ def compute_autograd_derivatives(model, z_column, collocation_x, grad_order=1):
         return grad_1[:, 0], grad_1[:, 1], grad_2_x, grad_2_y
     return grad_1[:, 0], grad_1[:, 1], None, None
 
-# w_1,w_2,w_3, w_4, w_5 =0.01,0.01,1e2,1e4,1e4
-# w_1,w_2,w_3, w_4, w_5  =0.01,0.01,1e2,1e5,1e4
+
 w_1,w_2,w_3, w_4, w_5 =0.01,0.01,1e2,10e5,1e4
 
 def loss_volume(y, gamma=0.5):
@@ -241,7 +240,11 @@ def calculate_loss_multioutput(model_list, iteration, diff_method='Numerical', t
             if vol_loss< 1e-2:
                 vol_loss*=0
 
-    # Return final losses
+    # Plot fields at checkpoints
+    if iteration in checkpoints:
+        plot_density_and_velocity_fields(u, v, p, ro , collocation_x, iteration, title)
+        
+            # Return final losses
     return loss_pde1, loss_pde2, loss_pde3, w_5*torch.mean(dp_loss), vol_loss 
 
 
