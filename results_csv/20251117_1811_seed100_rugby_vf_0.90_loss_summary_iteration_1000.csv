@@ -1,0 +1,8 @@
+metric,value
+iteration,1000.0
+final_total_loss,13520.98046875
+final_pde1_loss,2737.71733045578
+final_pde2_loss,441.96706265211105
+final_pde3_loss,0.2903496826171875
+final_dissipated_power_loss,2.28282744140625
+final_volume_loss,0.000636368989944458
